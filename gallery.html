@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Photo Gallery - Modern Blog</title>
+    <meta name="description" content="Browse our photo gallery featuring beautiful moments and memories.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">✨ ModernBlog</a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#affiliate" class="nav-link">Recommendations</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Header -->
+    <section class="section" style="padding-top: calc(var(--header-height) + var(--space-16));">
+        <div class="container">
+            <h1 class="text-center">Photo Gallery</h1>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto var(--space-12);">
+                Explore our collection of beautiful photos and memorable moments.
+            </p>
+
+            <!-- Filter Buttons -->
+            <div
+                style="display: flex; gap: var(--space-3); flex-wrap: wrap; justify-content: center; margin-bottom: var(--space-8);">
+                <button class="tag" data-filter="all"
+                    style="cursor: pointer; border: 2px solid var(--color-accent-purple); padding: var(--space-2) var(--space-4);">
+                    All Photos
+                </button>
+                <button class="tag" data-filter="nature" style="cursor: pointer;">Nature</button>
+                <button class="tag" data-filter="urban" style="cursor: pointer;">Urban</button>
+                <button class="tag" data-filter="travel" style="cursor: pointer;">Travel</button>
+                <button class="tag" data-filter="lifestyle" style="cursor: pointer;">Lifestyle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items -->
+                <div class="gallery-item reveal" data-category="nature">
+                    <img src="https://via.placeholder.com/400x400/a855f7/ffffff?text=Nature+1"
+                        alt="Nature photography 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="urban">
+                    <img src="https://via.placeholder.com/400x400/3b82f6/ffffff?text=Urban+1" alt="Urban photography 1"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="travel">
+                    <img src="https://via.placeholder.com/400x400/ec4899/ffffff?text=Travel+1"
+                        alt="Travel photography 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="lifestyle">
+                    <img src="https://via.placeholder.com/400x400/06b6d4/ffffff?text=Lifestyle+1"
+                        alt="Lifestyle photography 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="nature">
+                    <img src="https://via.placeholder.com/400x400/8b5cf6/ffffff?text=Nature+2"
+                        alt="Nature photography 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="urban">
+                    <img src="https://via.placeholder.com/400x400/10b981/ffffff?text=Urban+2" alt="Urban photography 2"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="travel">
+                    <img src="https://via.placeholder.com/400x400/f59e0b/ffffff?text=Travel+2"
+                        alt="Travel photography 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="lifestyle">
+                    <img src="https://via.placeholder.com/400x400/ef4444/ffffff?text=Lifestyle+2"
+                        alt="Lifestyle photography 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="nature">
+                    <img src="https://via.placeholder.com/400x400/14b8a6/ffffff?text=Nature+3"
+                        alt="Nature photography 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="urban">
+                    <img src="https://via.placeholder.com/400x400/f97316/ffffff?text=Urban+3" alt="Urban photography 3"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="travel">
+                    <img src="https://via.placeholder.com/400x400/6366f1/ffffff?text=Travel+3"
+                        alt="Travel photography 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="lifestyle">
+                    <img src="https://via.placeholder.com/400x400/84cc16/ffffff?text=Lifestyle+3"
+                        alt="Lifestyle photography 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">×</button>
+        <img src="" alt="Lightbox image" id="lightboxImage">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="logo">✨ ModernBlog</h4>
+                    <p>Your source for insightful content and quality recommendations.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#affiliate">Products</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ModernBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

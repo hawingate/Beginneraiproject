@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title id="postTitle">Blog Post - Modern Blog</title>
+    <meta name="description" id="postDescription" content="Read this insightful article on Modern Blog">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">✨ ModernBlog</a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#affiliate" class="nav-link">Recommendations</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="section" style="padding-top: calc(var(--header-height) + var(--space-16));">
+        <div class="container" style="max-width: 800px;">
+            <div id="postContent">
+                <!-- Content will be loaded dynamically -->
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="card mt-8">
+                <h4>Share this article</h4>
+                <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4);">
+                    <a href="#" class="btn btn-secondary" onclick="shareOnTwitter(); return false;">
+                        Share on Twitter
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="shareOnFacebook(); return false;">
+                        Share on Facebook
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="copyLink(); return false;">
+                        Copy Link
+                    </a>
+                </div>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="card mt-8">
+                <h4>About the Author</h4>
+                <div style="display: flex; gap: var(--space-4); align-items: center; margin-top: var(--space-4);">
+                    <div
+                        style="width: 80px; height: 80px; border-radius: var(--radius-full); background: var(--gradient-primary);">
+                    </div>
+                    <div>
+                        <h5 style="margin-bottom: var(--space-2); color: var(--color-text-primary);">Blog Author</h5>
+                        <p style="margin: 0;">Passionate writer sharing insights on technology, lifestyle, and
+                            productivity. Follow for more great content!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="section" style="background: var(--color-bg-secondary); padding-top: var(--space-16);">
+        <div class="container">
+            <h2 class="text-center">Related Articles</h2>
+            <div class="grid grid-3 mt-8" id="relatedPosts">
+                <!-- Related posts will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="logo">✨ ModernBlog</h4>
+                    <p>Your source for insightful content and quality recommendations.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ModernBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+        // Load post content based on URL parameter
+        loadPostContent();
+    </script>
+</body>
+
+</html>

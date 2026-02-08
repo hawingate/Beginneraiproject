@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Modern Blog - Insights, Tips & Affiliate Recommendations</title>
+    <meta name="title" content="Modern Blog - Insights, Tips & Affiliate Recommendations">
+    <meta name="description"
+        content="Discover insightful articles, expert tips, and hand-picked product recommendations. Your modern blog for technology, lifestyle, and productivity.">
+    <meta name="keywords" content="blog, technology, lifestyle, productivity, reviews, affiliate products">
+    <meta name="author" content="Modern Blog">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourblog.netlify.app/">
+    <meta property="og:title" content="Modern Blog - Insights, Tips & Affiliate Recommendations">
+    <meta property="og:description"
+        content="Discover insightful articles, expert tips, and hand-picked product recommendations.">
+    <meta property="og:image" content="https://yourblog.netlify.app/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourblog.netlify.app/">
+    <meta property="twitter:title" content="Modern Blog - Insights, Tips & Affiliate Recommendations">
+    <meta property="twitter:description"
+        content="Discover insightful articles, expert tips, and hand-picked product recommendations.">
+    <meta property="twitter:image" content="https://yourblog.netlify.app/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Modern Blog",
+    "description": "Insights, tips, and affiliate recommendations",
+    "url": "https://yourblog.netlify.app/",
+    "author": {
+      "@type": "Person",
+      "name": "Blog Author"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">✨ ModernBlog</a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="ai-practices.html" class="nav-link">AI Practices</a></li>
+                    <li><a href="#affiliate" class="nav-link">Recommendations</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Your Modern Blog</h1>
+                <p>Discover insightful articles, expert tips, and hand-picked recommendations to elevate your lifestyle
+                    and productivity.</p>
+                <div class="hero-buttons">
+                    <a href="blog.html" class="btn btn-primary">Explore Articles</a>
+                    <a href="#newsletter" class="btn btn-secondary">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="section" id="featured">
+        <div class="container">
+            <h2 class="text-center">Featured Articles</h2>
+            <p class="text-center" style="margin-bottom: var(--space-12);">Check out our latest and most popular posts
+            </p>
+
+            <div class="grid grid-3" id="featuredPosts">
+                <!-- Posts will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliate Products Section -->
+    <section class="section" id="affiliate" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <h2 class="text-center">Recommended Products</h2>
+            <p class="text-center" style="margin-bottom: var(--space-12);">Hand-picked products we love and use every
+                day</p>
+
+            <div class="affiliate-grid">
+                <!-- Affiliate Product 1 -->
+                <div class="card affiliate-card">
+                    <span class="affiliate-badge">Affiliate Link</span>
+                    <img src="https://via.placeholder.com/400x300/a855f7/ffffff?text=Premium+Headphones"
+                        alt="Premium Wireless Headphones" class="card-image">
+                    <h3 class="card-title">Premium Wireless Headphones</h3>
+                    <p class="card-description">Experience crystal-clear audio with active noise cancellation. Perfect
+                        for work and travel.</p>
+                    <div class="card-meta">
+                        <span>⭐⭐⭐⭐⭐ 4.8/5</span>
+                        <span>$299</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 100%;">Check Price →</a>
+                </div>
+
+                <!-- Affiliate Product 2 -->
+                <div class="card affiliate-card">
+                    <span class="affiliate-badge">Affiliate Link</span>
+                    <img src="https://via.placeholder.com/400x300/3b82f6/ffffff?text=Smart+Watch"
+                        alt="Fitness Smart Watch" class="card-image">
+                    <h3 class="card-title">Fitness Smart Watch</h3>
+                    <p class="card-description">Track your health and fitness goals with advanced metrics and insights.
+                    </p>
+                    <div class="card-meta">
+                        <span>⭐⭐⭐⭐⭐ 4.7/5</span>
+                        <span>$399</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 100%;">Check Price →</a>
+                </div>
+
+                <!-- Affiliate Product 3 -->
+                <div class="card affiliate-card">
+                    <span class="affiliate-badge">Affiliate Link</span>
+                    <img src="https://via.placeholder.com/400x300/ec4899/ffffff?text=Laptop+Stand"
+                        alt="Ergonomic Laptop Stand" class="card-image">
+                    <h3 class="card-title">Ergonomic Laptop Stand</h3>
+                    <p class="card-description">Improve your posture and productivity with this adjustable aluminum
+                        stand.</p>
+                    <div class="card-meta">
+                        <span>⭐⭐⭐⭐⭐ 4.9/5</span>
+                        <span>$79</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 100%;">Check Price →</a>
+                </div>
+
+                <!-- Affiliate Product 4 -->
+                <div class="card affiliate-card">
+                    <span class="affiliate-badge">Affiliate Link</span>
+                    <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Mechanical+Keyboard"
+                        alt="Mechanical Keyboard" class="card-image">
+                    <h3 class="card-title">Mechanical Keyboard</h3>
+                    <p class="card-description">Ultra-responsive RGB mechanical keyboard with customizable keys for
+                        ultimate productivity.</p>
+                    <div class="card-meta">
+                        <span>⭐⭐⭐⭐⭐ 4.6/5</span>
+                        <span>$159</span>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 100%;">Check Price →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="section" id="gallery-preview">
+        <div class="container">
+            <h2 class="text-center">Photo Gallery</h2>
+            <p class="text-center" style="margin-bottom: var(--space-12);">Moments captured, memories preserved</p>
+
+            <div class="gallery-grid">
+                <!-- Gallery preview items -->
+                <div class="gallery-item reveal">
+                    <img src="https://via.placeholder.com/400x400/a855f7/ffffff?text=Gallery+1" alt="Gallery image 1">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://via.placeholder.com/400x400/3b82f6/ffffff?text=Gallery+2" alt="Gallery image 2">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://via.placeholder.com/400x400/ec4899/ffffff?text=Gallery+3" alt="Gallery image 3">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://via.placeholder.com/400x400/06b6d4/ffffff?text=Gallery+4" alt="Gallery image 4">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://via.placeholder.com/400x400/8b5cf6/ffffff?text=Gallery+5" alt="Gallery image 5">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://via.placeholder.com/400x400/10b981/ffffff?text=Gallery+6" alt="Gallery image 6">
+                    <div class="gallery-overlay">
+                        <span style="color: white; font-size: var(--font-size-2xl);">🔍</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="gallery.html" class="btn btn-secondary">View Full Gallery →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section" id="newsletter" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2>Stay Updated</h2>
+                <p style="margin-bottom: var(--space-8);">Subscribe to our newsletter for the latest articles, tips, and
+                    product recommendations delivered to your inbox.</p>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group" style="text-align: left;">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="logo">✨ ModernBlog</h4>
+                    <p>Your source for insightful content and quality recommendations.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z">
+                                </path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#affiliate">Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html?category=technology">Technology</a></li>
+                        <li><a href="blog.html?category=lifestyle">Lifestyle</a></li>
+                        <li><a href="blog.html?category=productivity">Productivity</a></li>
+                        <li><a href="blog.html?category=reviews">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ModernBlog. All rights reserved. Built with ❤️ and modern web technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Load featured posts on homepage
+        loadFeaturedPosts();
+    </script>
+</body>
+
+</html>
