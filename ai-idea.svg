@@ -1,0 +1,39 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 5px #fde047); opacity: 0.8; }
+        50% { filter: drop-shadow(0 0 20px #fde047); opacity: 1; }
+      }
+      @keyframes spin-spark {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .bulb { animation: glow 2s infinite ease-in-out; }
+      .spark { transform-origin: 100px 75px; animation: spin-spark 10s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Sparks -->
+  <g class="spark">
+    <circle cx="100" cy="30" r="3" fill="#fde047" />
+    <circle cx="140" cy="45" r="2" fill="#fde047" />
+    <circle cx="155" cy="85" r="3" fill="#fde047" />
+    <circle cx="140" cy="125" r="2" fill="#fde047" />
+    <circle cx="100" cy="140" r="3" fill="#fde047" />
+    <circle cx="60" cy="125" r="2" fill="#fde047" />
+    <circle cx="45" cy="85" r="3" fill="#fde047" />
+    <circle cx="60" cy="45" r="2" fill="#fde047" />
+  </g>
+
+  <!-- Bulb Shape -->
+  <path class="bulb" d="M100 40 C75 40 60 60 60 85 C60 105 75 115 85 125 L115 125 C125 115 140 105 140 85 C140 60 125 40 100 40 Z" fill="#fef08a" stroke="#facc15" stroke-width="2" />
+  
+  <!-- Bulb Base -->
+  <rect x="85" y="125" width="30" height="10" rx="2" fill="#94a3b8" />
+  <rect x="87" y="137" width="26" height="5" rx="2" fill="#64748b" />
+  <path d="M90 145 Q100 155 110 145" fill="none" stroke="#64748b" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Filament -->
+  <path d="M90 95 Q100 80 110 95" fill="none" stroke="#facc15" stroke-width="2" stroke-linecap="round" />
+</svg>
